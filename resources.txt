@@ -1,0 +1,9 @@
+Gabe, why use 850 different colors when you can plot all of the colors? 
+
+rainbow2D = ParametricPlot[{Cos[t],Sin[t]}, {t, 0, 2 Pi}, PlotStyle -> Thickness[.015], ColorFunction -> Function[{x, y}, ColorData["Rainbow"][y]]]
+
+rainbow3D = ParametricPlot3D[{Cos[4 t],Sin[4 t],t}, {t, 0, 2 Pi}, PlotStyle -> Thickness[.025], ColorFunction -> Function[{x, y, z}, ColorData["BrightBands"][z]]]
+
+https://reference.wolfram.com/language/guide/ColorSchemes.html
+
+https://blog.wolfram.com/2013/05/17/making-formulas-for-everything-from-pi-to-the-pink-panther-to-sir-isaac-newton/
